@@ -31,7 +31,7 @@ Se analiza cómo un filtro de Capa 3 bloquea el tráfico saliente desde una subr
 
 La red está dividida en múltiples subredes IPv4 interconectadas mediante enlaces seriales entre los routers R1, R2 y R3.
 
-![Topología Inicial](01-topologìa-inicial.png)
+![Topología Inicial](01-topologia-inicial.png)
 
 ---
 
