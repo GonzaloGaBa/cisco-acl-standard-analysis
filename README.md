@@ -44,7 +44,7 @@ Desde **PC1** (`192.168.10.x`), se realizaron pruebas de conectividad ICMP (`pin
 1. **Ping a local (`192.168.10.11` - PC2):** **Exitoso**. Al pertenecer a la misma subred, el tráfico se conmuta a nivel de **Capa 2 (Switch S1)** y nunca alcanza el Router R1.
 2. **Ping a red remota (`192.168.30.12` - PC4):** **Fallido** (`Destination host unreachable`). El paquete debe cruzar el Router R1 (Capa 3) para ser enrutado, donde es bloqueado por la ACL saliente.
 
-![Bloqueo ACL Inicial](images/02-bloqueo-acl-inicial.png)
+![Bloqueo ACL Inicial](02-bloqueo-acl-inicial.png)
 
 ---
 
@@ -58,7 +58,7 @@ Se accedió a la CLI de **R1** en modo privilegiado para auditar la configuraci�
 2. **`show ip interface serial 0/0/0`**: Confirmó que la ACL 11 está vinculada como filtro saliente:
    * `Outgoing access list is 11`.
 
-![Inspección CLI R1](images/03-inspeccion-cli-r1.png)
+![Inspección CLI R1](03-inspeccion-cli-r1.png)
 
 ---
 
